@@ -59,8 +59,8 @@ export class Database {
       this.#database[table][rowIndex] = {
         id,
         ...data,
-        updated_at: new Date().toLocaleDateString(),
         ...other,
+        updated_at: new Date().toLocaleDateString(),
       };
       this.#persist();
     }
@@ -77,6 +77,15 @@ export class Database {
     }
   }
 
+  complete(table, id) {
+    const rowIndex = this.find(table, id);
+    const { completed_at, ...resto } = this.#database[table][rowIndex];
+    this.#database[table][rowIndex] = {
+      ...resto,
+      completed_at: new Date().toLocaleDateString(),
+    };
+    this.#persist();
+  }
   find(table, id) {
     return this.#database[table].findIndex((row) => row.id === id);
   }

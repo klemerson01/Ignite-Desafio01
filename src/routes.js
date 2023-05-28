@@ -98,4 +98,19 @@ export const routes = [
       }
     },
   },
+  {
+    method: "PATCH",
+    path: buildRoutePath("/tasks/:id/complete"),
+    handler: (req, res) => {
+      const { id } = req.params;
+      const rowIndex = database.find("tasks", id);
+
+      if (rowIndex > -1) {
+        database.complete("tasks", id);
+        res.writeHead(204).end();
+      } else {
+        res.writeHead(404).end(JSON.stringify("Registro inexiste"));
+      }
+    },
+  },
 ];
