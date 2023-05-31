@@ -1,24 +1,12 @@
-<<<<<<< HEAD
 {
   "tasks": [
     {
-      "id": "cc0cc1d8-27b0-450a-8a34-70c6cacefe08",
-      "title": "Aprender TypeScript",
-      "description": "Conhecer o TypeScrip e suas facilidades no dia a dia",
-      "created_at": "30/05/2023",
-      "updated_at": null,
-      "completed_at": "30/05/2023"
-    },
-    {
-      "id": "825de95f-ed5f-4177-8eab-7ad7ef9b29df",
-      "title": "Ignite Rocktseat",
+      "id": "647b625a-3a37-4593-af59-1585b0bb98fa",
+      "title": "Ignite",
       "description": "Estudar o 2º modulo do ignite",
       "created_at": "30/05/2023",
-      "updated_at": "30/05/2023",
+      "updated_at": null,
       "completed_at": null
     }
   ]
 }
-=======
-{"tasks":[{"id":"c7938432-c0ee-423a-be3d-9fb502c833e9","title":"Estudar Node.JS","description":"Conceitos do node.js ","created_at":"28/05/2023","updated_at":"28/05/2023","completed_at":"28/05/2023"},{"id":"7c5397f2-7867-4698-a387-c461cca403a5","title":"Aprender TypeScript","description":"Aprender o conceito do TypeScript, e como aplicar nos projetos com Node.JS","updated_at":"28/05/2023","created_at":"28/05/2023","completed_at":null}]}
->>>>>>> ecf2bfb17ef627366ace776aa5965344794fabe4

@@ -18,11 +18,6 @@ const server = http.createServer(async (req, res) => {
 
     const { query, ...params } = routeParams.groups;
 
-<<<<<<< HEAD
-=======
-    
-
->>>>>>> ecf2bfb17ef627366ace776aa5965344794fabe4
     req.params = params;
     req.query = query ? extractQueryParams(query) : {};
 
