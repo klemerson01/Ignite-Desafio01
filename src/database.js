@@ -1,7 +1,10 @@
 import fs from "node:fs/promises";
 
 const databasePath = new URL("../db.json", import.meta.url);
+<<<<<<< HEAD
 // console.log(databasePath)
+=======
+>>>>>>> ecf2bfb17ef627366ace776aa5965344794fabe4
 
 export class Database {
   #database = {};
@@ -80,6 +83,7 @@ export class Database {
 
   complete(table, id) {
     const rowIndex = this.find(table, id);
+<<<<<<< HEAD
     let { completed_at, ...resto } = this.#database[table][rowIndex];
     if (completed_at == null) {
       this.#database[table][rowIndex] = {
@@ -95,6 +99,15 @@ export class Database {
     this.#persist();
   }
 
+=======
+    const { completed_at, ...resto } = this.#database[table][rowIndex];
+    this.#database[table][rowIndex] = {
+      ...resto,
+      completed_at: new Date().toLocaleDateString(),
+    };
+    this.#persist();
+  }
+>>>>>>> ecf2bfb17ef627366ace776aa5965344794fabe4
   find(table, id) {
     return this.#database[table].findIndex((row) => row.id === id);
   }

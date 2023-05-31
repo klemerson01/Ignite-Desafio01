@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "tasks": [
     {
@@ -18,3 +19,6 @@
     }
   ]
 }
+=======
+{"tasks":[{"id":"c7938432-c0ee-423a-be3d-9fb502c833e9","title":"Estudar Node.JS","description":"Conceitos do node.js ","created_at":"28/05/2023","updated_at":"28/05/2023","completed_at":"28/05/2023"},{"id":"7c5397f2-7867-4698-a387-c461cca403a5","title":"Aprender TypeScript","description":"Aprender o conceito do TypeScript, e como aplicar nos projetos com Node.JS","updated_at":"28/05/2023","created_at":"28/05/2023","completed_at":null}]}
+>>>>>>> ecf2bfb17ef627366ace776aa5965344794fabe4
