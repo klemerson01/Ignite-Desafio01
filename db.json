@@ -1,0 +1,20 @@
+{
+  "tasks": [
+    {
+      "id": "cc0cc1d8-27b0-450a-8a34-70c6cacefe08",
+      "title": "Aprender TypeScript",
+      "description": "Conhecer o TypeScrip e suas facilidades no dia a dia",
+      "created_at": "30/05/2023",
+      "updated_at": null,
+      "completed_at": "30/05/2023"
+    },
+    {
+      "id": "825de95f-ed5f-4177-8eab-7ad7ef9b29df",
+      "title": "Ignite Rocktseat",
+      "description": "Estudar o 2º modulo do ignite",
+      "created_at": "30/05/2023",
+      "updated_at": "30/05/2023",
+      "completed_at": null
+    }
+  ]
+}
