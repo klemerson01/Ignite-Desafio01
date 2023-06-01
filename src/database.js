@@ -81,17 +81,12 @@ export class Database {
   complete(table, id) {
     const rowIndex = this.find(table, id);
     let { completed_at, ...resto } = this.#database[table][rowIndex];
-    if (completed_at == null) {
-      this.#database[table][rowIndex] = {
-        ...resto,
-        completed_at: new Date().toLocaleDateString(),
-      };
-    } else {
-      this.#database[table][rowIndex] = {
-        ...resto,
-        completed_at: null,
-      };
-    }
+
+    this.#database[table][rowIndex] = {
+      ...resto,
+      completed_at:
+        completed_at == null ? new Date().toLocaleDateString() : null,
+    };
     this.#persist();
   }
 

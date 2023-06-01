@@ -1,12 +1,1 @@
-{
-  "tasks": [
-    {
-      "id": "647b625a-3a37-4593-af59-1585b0bb98fa",
-      "title": "Ignite",
-      "description": "Estudar o 2º modulo do ignite",
-      "created_at": "30/05/2023",
-      "updated_at": null,
-      "completed_at": null
-    }
-  ]
-}
+{"tasks":[{"id":"647b625a-3a37-4593-af59-1585b0bb98fa","title":"Ignite","description":"Estudar o 2º modulo do ignite","created_at":"30/05/2023","updated_at":null,"completed_at":null}]}
